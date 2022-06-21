@@ -1,8 +1,8 @@
 {
   "name": "image-to-ico",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "convert image to windows ico format",
-  "main": "index.js",
+  "main": "lib/index.js",
   "engines": {
     "node": ">=8"
   },
@@ -41,6 +41,7 @@
     "jimp": "^0.16.1"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.0",
     "rollup": "^2.75.7"
   }
 }
