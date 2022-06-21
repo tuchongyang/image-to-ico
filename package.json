@@ -1,0 +1,46 @@
+{
+  "name": "image-to-ico",
+  "version": "1.0.0",
+  "description": "convert image to windows ico format",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "*.md",
+    "index.d.ts",
+    "lib",
+    "es",
+    "cjs"
+  ],
+  "typings": "index.d.ts",
+  "scripts": {
+    "build:clean": "rimraf es && rimraf cjs && rimraf lib",
+    "build": "npm run build:clean && rollup -c rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuchongyang/image-to-ico.git"
+  },
+  "keywords": [
+    "png",
+    "ico",
+    "favicon",
+    "favicon-generator",
+    "fast",
+    "convert"
+  ],
+  "author": "tcy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tuchongyang/image-to-ico.git/issues"
+  },
+  "homepage": "https://github.com/tuchongyang/image-to-ico.git#readme",
+  "dependencies": {
+    "@types/node": "^17.0.12",
+    "jimp": "^0.16.1"
+  },
+  "devDependencies": {
+    "rollup": "^2.75.7"
+  }
+}
